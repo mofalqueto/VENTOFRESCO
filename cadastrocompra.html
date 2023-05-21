@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Vento Fresco</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+</head>
+<body>
+<div id="app">
+<div class="content">
+
+  <nav>
+    <label for="drop" class="toggle"><img src="cooler.png" />&nbspM&nbspE&nbspN&nbspU</label>
+    <input type="checkbox" id="drop" />
+        <ul class="menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="ventilador.html">VENTILADOR</a></li>
+            <li><a href="cadastro.html">LOGIN/CADASTRO</a></li>
+            <li><a href="mailto:ventofresco@ventofresco.com.br">CONTATO</a></li>
+        </ul>
+    </nav>
+
+    
+      <div id="myDIV">
+        <div class="item1"><img src="gifvent.gif" style="align-self: center; text-align: center;"/></div>
+        <div class="item3"><h1 id="vtext">ÓTIMA ESCOLHA... VOCÊ ESTÁ AINDA MAIS PRÓXIMO DE TER ACESSO A UMA TECNOLOGIA ÚNICA E EXCLUSIVA NO MERCADO!</h1>
+          <br>
+          <p id="cadtext">Digite seu email e sua senha para concluirmos o processo de compra. Caso ainda não tenha cadastro conosco, selecione cadastrar.</p></div>
+        <div class="item4">
+            <form class="fcad">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" name="nome">
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email">
+            </form>
+            </div>
+        <div class="item5" style="align-self: center; text-align: center;">
+          <button @click="fEntra" class="button buttonCad">ENTRAR</button> 
+          <br>
+          <button @click="fCad" class="button buttonCad">CADASTRAR</button>
+          
+        </div>
+</div>
+   
+      </div>
+      
+
+</div>
+</div>
+
+</body>
+</html>
+
+<script>
+  const { createApp } = Vue;
+
+  createApp({
+      methods: {
+          fCad: function() {
+            //alert("")
+            open("novocadastro.html")
+          },
+          fEntra: function() {
+            //alert("")
+            open("finalizacao.html")
+          },
+      }
+  }).mount("#app");
+</script>
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Vento Fresco</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+</head>
+<body>
+<div id="app">
+<div class="content">
+
+  <nav>
+    <label for="drop" class="toggle"><img src="cooler.png" />&nbspM&nbspE&nbspN&nbspU</label>
+    <input type="checkbox" id="drop" />
+        <ul class="menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="ventilador.html">VENTILADOR</a></li>
+            <li><a href="cadastro.html">LOGIN/CADASTRO</a></li>
+            <li><a href="mailto:ventofresco@ventofresco.com.br">CONTATO</a></li>
+        </ul>
+    </nav>
+
+    
+      <div id="myDIV">
+        <div class="item1"><img src="gifvent.gif" /></div>
+        <div class="item3"><h1 id="vtext">VENTILADOR BLUETOOTH ELETROPORTÁTIL VENTO FRESCO</h1>
+          <br>
+          Com DESIGN MODERNO e adequado que se encaixa em qualquer espaço, a VENTO FRESCO inova ao lançar um eletroportátil com SETE hélices. Além disso, o ventilador vento fresco oferece INCLINAÇÃO REGULÁVEL, possui 3 velocidades e giro 360º que permite mudar a posição do vento sem mudar o localização do ventilador.
+          Excelente modelo para ajudar na circulação de ar e refrescar os dias e noites de calor intenso já que o ventilador vento fresco SE ADAPTA em qualquer cômodo da casa ou escritório, basta colocar o aparelho onde quiser e depois só ajustar a direção da base e a velocidade pelo sistema EXCLUSIVO criado pela vento fresco, DIRETAMENTE pelo aplicativo do seu SMARTPHONE, sem precisar ir até o aparelho para isso.</div>
+        <div class="item4">3 Velocidades<br>
+          7 Hélices<br>
+          60cm de diâmetro<br>
+          70cm de altura<br>
+          Disponível na versão 110V ou 120V
+          </div>
+        <div class="item5">Muito silencioso<br>
+          leve e fácil para transportar<br>
+          120 Watts de potência<br>
+          Ajuste de Inclinação<br>
+          Fácil manuseio</div>
+        <div class="item6">R$ 499,99 
+          ou em até 10x 49,99 sem juros<br>FRETE GRATIS<br><br><button @click="fComprar" class="button buttonC">COMPRAR</button></div>
+
+        
+      </div>
+      
+   
+    
+
+</div>
+</div>
+
+
+
+
+</body>
+</html>
+
+<script>
+  const { createApp } = Vue;
+
+  createApp({
+      methods: {
+          fComprar: function() {
+            alert("PARABÉNS PELA ESCOLHA!!! VOCÊ ESTÁ ESCOLHENDO O MELHOR CIRCULADOR DE AR DO MERCADO")
+            open("cadastrocompra.html")
+          },
+      }
+  }).mount("#app");
+</script>
+

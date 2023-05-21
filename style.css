@@ -1,0 +1,434 @@
+*{  background-color: #1f1e1f;}
+  
+  body {
+    margin: 0;
+    background-color: #1f1e1f;
+    overflow:auto;
+    font-family:Haettenschweiler, Impact;
+  }
+
+  #logo {
+    display: block;
+    padding: 0 30px;
+    float: left;
+  }
+
+  nav a.active {
+    background-color: #FFF;
+    color: #1f1e1f;
+  }
+  
+  a {
+    color: #FFF;
+    background-color: #FFF;
+  }
+  
+  .toggle,
+  [id^=drop] {
+    display: none;
+  }
+  
+  nav { 
+    margin:0;
+    padding: 5px;
+    background-color: #FFF;
+    color: #FFF;
+    display:flex;
+    justify-content: space-between;
+    font-family:Haettenschweiler, Impact;
+  }
+  
+  nav:after {
+    content:"";
+    display:table;
+    clear:both;
+    background-color: #FFF;
+  }
+  
+  nav ul {
+    padding:0;
+    margin:10px;
+    list-style: none;
+    position: relative;
+    display:flex;
+    justify-content: space-between;
+    background-color: #FFF;
+    }
+    
+  nav ul li {
+    margin: 0px;
+    display:block;
+    float: left;
+    background-color: #FFF;
+  }
+  
+  nav a {
+    display:block;
+    padding: 5px 70px;	
+    text-align: center;
+    background-color: #1f1e1f;
+    color: #FFF;
+    font-size:30px;
+    text-decoration:none;
+    transition: 0.4s;
+    text-shadow: 3px 4px 3px grey;
+    box-shadow: 3px 4px 3px grey;;
+  }
+  
+  nav a:hover { 
+    background-color: rgb(184, 181, 181);
+    color: #1f1e1f;
+    text-decoration:none;
+  }
+  
+    
+  @media all and (max-width : 768px) {
+    #logo {
+      display: block;
+      padding: 0;
+      width: 100%;
+      text-align: center;
+      float: none;
+    }
+  
+    nav {
+      margin: 0;
+    }
+  
+    nav a{
+      font-size:35px;
+      padding:5px 35px;	
+      margin: 2px;
+      float:left;
+    }
+  
+
+    .toggle + a,
+    .menu {
+      display: none;
+      margin:0px;
+      
+      padding:0px 70px;
+    }
+  
+
+    .toggle {
+      display: block;
+      background-color: #FFF;
+      padding:3px 3px;	
+      color:#1f1e1f;
+      font-size:25px;
+      text-decoration:none;
+      border:none;
+      text-shadow: 3px 4px 3px grey;
+      
+    }
+  
+    .toggle:hover {
+      background-color: grey;
+      color: #FFF;
+      text-shadow: 3px 4px 3px #1f1e1f;
+    }
+  
+    [id^=drop]:checked + ul {
+      display: block;
+    }
+  
+    nav ul li {
+      display: block;
+      width: 100%;
+    }
+
+    nav a:hover {
+      background-color: rgb(184, 181, 181);
+      text-shadow: 3px 4px 3px grey;
+    }
+  
+  }
+  
+  @media all and (max-width : 330px) {
+  
+    nav ul li {
+      display:block;
+      width: 94%;
+    }
+  
+  }
+
+
+.home{
+  background-color: #1f1e1f;
+  display: flex;
+  align-items: stretch;
+  color: #f5f5f5; 
+}
+
+.home div{
+ flex: 1;
+text-align: center;
+align-self: center;
+}
+
+#vf{
+  font-size: 100px;
+  text-shadow: 9px 5px 9px grey;
+  font-family:Haettenschweiler, Impact;
+}
+
+#htext {
+  padding-top: 30px;
+}
+
+#vftext{
+  word-spacing: 35px;
+  font-variant: small-caps;
+  font-size: 20px;
+  padding: 30px;
+}
+
+
+@media all and (max-width : 768px) {
+
+.home{
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+  
+#vf{
+  font-size: 120px;
+}
+
+#htext {
+  padding: 20px;
+  font-size: 40px;
+}
+
+}
+
+
+
+#myDIV {
+  display: grid;
+  grid-template-columns:auto auto auto auto;
+  grid-template-rows: auto auto;
+  gap: 35px;
+  background-color: #1f1e1f;
+  padding: 30px;
+  color:#f5f5f5;
+}
+
+#myDIV div {
+  background-color: #1f1e1f;
+  padding: 10px 0;
+  
+}
+
+.item1 {
+  grid-row-start: span 2;
+  align-self: center;
+  text-align: center;
+  
+  
+}
+
+.item3 {
+  grid-column: auto / span 3;
+  text-align: center;
+  font-variant: small-caps;
+  font-size: 20px;
+  
+}
+
+.item4 {
+  text-align: right;
+  font-variant: small-caps;
+  font-size: 15px;
+}
+
+.item5 {
+  text-align: left;
+  font-variant: small-caps;
+  font-size: 15px;
+}
+
+.item6 {
+  text-align: center;
+  font-variant: small-caps;
+  font-size: 20px;
+  color:#d83706;
+}
+
+
+#vtext{
+  font-size: 35px;
+  text-shadow: 9px 5px 9px grey;
+  font-family:Haettenschweiler, Impact;
+}
+
+
+.button {
+  border: none;
+  color: white;
+  padding: 8px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-shadow: 9px 5px 9px grey;
+}
+
+
+.buttonC {
+  background-color: white; 
+  color: #d83706; 
+  border: 2px solid #d83706;
+  
+}
+
+.buttonC:hover {
+  background-color: #d83706;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 #FFF;
+}
+
+
+@media all and (max-width : 768px) {
+
+  #myDIV {
+    display: table;
+    height: 100%;
+    width: 100%;
+  }
+  
+  #myDIV div {
+    display: table;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .item1 img {
+    width: 40%;
+  }
+  
+  .item3 {
+    grid-column: auto / span 3;
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 20px;
+    
+  }
+  
+  .item4 {
+    text-align: left;
+    font-variant: small-caps;
+    font-size: 15px;
+  }
+  
+  .item5 {
+    text-align: right;
+    font-variant: small-caps;
+    font-size: 15px;
+  }
+  
+  .item6 {
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 20px;
+  }
+  
+  
+  #vtext{
+    font-size: 40px;
+    text-shadow: 9px 5px 9px grey;
+    font-family:Haettenschweiler, Impact;
+  }
+
+  }
+
+
+  #cad {
+    min-height: 600px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    display: grid;
+    gap: 10px;
+    color:#f5f5f5;
+    padding: 10px;
+
+  }
+  #cad div {
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .it1 { grid-area: 1 / 1 / 2 / 2;
+    font-size: 80px;
+    text-shadow: 9px 5px 9px grey;
+    font-family:Haettenschweiler, Impact;
+  }
+
+  .it2 { grid-area: 1 / 2 / 2 / 4; 
+    text-align:center;
+    align-self: flex-end;
+    font-variant: small-caps;
+    font-size: 30px;
+  }
+  .it3 { grid-area: 2 / 1 / 3 / 3; align-self:center; }
+  .it4 { grid-area: 2 / 3 / 3 / 4;
+    align-self:center; }
+
+  .buttonCad {
+    background-color: white; 
+    color: #d83706; 
+    border: 2px solid #d83706;
+    border-radius: 60px;
+    
+  }
+  
+  .buttonCad:hover {
+    background-color: #d83706;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 #FFF;
+  }
+
+  .fcad{
+    text-align: left;
+    font-variant: small-caps;
+    font-size: 20px;
+  }
+
+  input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid red;
+    border-radius: 4px;
+    font-variant: small-caps;
+  }
+
+  .construcao{
+    margin: 18px;
+    color:#f5f5f5;
+    font-variant: small-caps;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  #cadtext{
+    text-align:right;
+    align-self: flex-end;
+    font-variant: small-caps;
+    font-size: 25px;
+  }
+
+  #fim{
+    font-size: 60px;
+    text-align: left;
+    text-shadow: 9px 5px 9px grey;
+    font-family:Haettenschweiler, Impact;
+  }

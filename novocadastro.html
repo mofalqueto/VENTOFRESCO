@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Vento Fresco</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+</head>
+<body>
+<div id="app">
+<div class="content">
+
+  <nav>
+    <label for="drop" class="toggle"><img src="cooler.png" />&nbspM&nbspE&nbspN&nbspU</label>
+    <input type="checkbox" id="drop" />
+        <ul class="menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="ventilador.html">VENTILADOR</a></li>
+            <li><a href="cadastro.html">LOGIN/CADASTRO</a></li>
+            <li><a href="mailto:ventofresco@ventofresco.com.br">CONTATO</a></li>
+        </ul>
+    </nav>
+
+    
+    <div id="cad">
+      <div class="it1"></div>
+      <div class="it2"></div>
+      <div class="it3">
+        <form class="fcad">
+          Nome
+          <input type="text" id="nome" name="nome" v-label="nome">
+          Email
+          <input type="text" id="email" name="email" v-label="email">
+          Endereço
+          <input type="text" id="end" name="end" v-label="end">
+          CPF
+          <input type="text" id="cpf" name="cpf" v-label="cpf">
+          Senha
+          <input type="text" id="senha" name="senha" v-label="senha">
+        </form>
+      </div>
+      <div class="it4">
+        <button @click="fNovocad" class="button buttonCad">CADASTRAR</button> <br>       
+        <b-button type="reset" @click="fLimpaform" class="button buttonCad">LIMPAR</b-button>
+      </div>
+</div>    
+
+</div>
+</div>
+
+
+</body>
+</html>
+
+<script>
+  const { createApp } = Vue;
+
+  createApp({
+    data() {
+            return {
+              nome: "",
+                email: "",
+                end: "",
+                cpf: "",
+                senha:""
+            }
+        },
+      methods: {
+          fNovocad: function() {
+            //alert("")
+            open("areacliente.html")
+          },
+          fLimpaform () {
+           this.email= "";
+           this.nome= "",
+           this.end= "",
+           this.cpf= "",
+           this.senha= ""
+    }
+      }
+  }).mount("#app");
+</script>
+
